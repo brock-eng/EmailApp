@@ -1,0 +1,17 @@
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\EmailUtil.dll
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\EmailUtil.pdb
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\Dapper.dll
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\FluentEmail.Core.dll
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\FluentEmail.Smtp.dll
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\Newtonsoft.Json.dll
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\System.Data.SQLite.dll
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\Dapper.xml
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\Newtonsoft.Json.xml
+C:\Users\zbrock\source\EmailApp\EmailUtil\bin\Release\System.Data.SQLite.xml
+C:\Users\zbrock\source\EmailApp\EmailUtil\obj\Release\EmailUtil.csproj.AssemblyReference.cache
+C:\Users\zbrock\source\EmailApp\EmailUtil\obj\Release\EmailUtil.csproj.CoreCompileInputs.cache
+C:\Users\zbrock\source\EmailApp\EmailUtil\obj\Release\EmailUtil.csproj.CopyComplete
+C:\Users\zbrock\source\EmailApp\EmailUtil\obj\Release\EmailUtil.dll
+C:\Users\zbrock\source\EmailApp\EmailUtil\obj\Release\EmailUtil.pdb

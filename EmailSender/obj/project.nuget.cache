@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "se78M7rPX3tcjDGHgcKhDowCatQSYCryMjgI67DOLQ0k8yGwYM2KqZjOcpfgPfgZ+vzanBNVPBJuEAW+6wMSdw==",
+  "dgSpecHash": "/Jl18r1PA/ylU0SipVR4rX4/aJYzjCe6f0Cs491Fl4VcEM5++jxSPH+m7F5nhOZ/qR7otUu4oDQDQwuIpWXDOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zbrock\\source\\repos\\EmailSender\\EmailSender\\EmailBackend.csproj",
+  "projectFilePath": "C:\\Users\\zbrock\\source\\EmailApp\\EmailSender\\EmailBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zbrock\\.nuget\\packages\\stub.system.data.sqlite.core.netstandard\\1.0.115.5\\stub.system.data.sqlite.core.netstandard.1.0.115.5.nupkg.sha512",
     "C:\\Users\\zbrock\\.nuget\\packages\\system.data.sqlite.core\\1.0.115.5\\system.data.sqlite.core.1.0.115.5.nupkg.sha512"
