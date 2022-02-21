@@ -8,7 +8,6 @@ C# automated email application built on a sample REST backend.  Logs all email a
 - Build/run application
 
 ### Usage
-
 Email calls are made via JSON Posts to the <strong>/api/email/send</strong> endpoint.
 ```
 // When testing against the local machine
@@ -26,9 +25,11 @@ EmailMessage JSON format:
 ```
 
 
-
+### Testing
 Sample Postman POST call:
 <img src="https://github.com/brock-eng/EmailApp/blob/main/img/postman_preview.png">
+
+In addition to an API platform like Postman, there is an included <a href="https://github.com/brock-eng/EmailApp/blob/main/restcall.py">python script</a> with a POST template for sending a sample email (requires python requests).
   
 
 
