@@ -1,4 +1,6 @@
 import os
+
+# pip install requests
 import requests as r
 
 def main():
