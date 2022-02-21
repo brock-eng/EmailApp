@@ -13,7 +13,7 @@ def main():
 
     try:
         jsonmsg = {
-            "address" : "[Sample Message]",
+            "address" : "[Address to send to]",
             "subject" : "Sample Message",
             "from"    : "[Your name / Your Email]",
             "message" : "Hello!\nWe've been trying to reach you about your cars extended warranty.\n\nThanks,\nRobot",
