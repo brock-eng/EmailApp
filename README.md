@@ -29,7 +29,7 @@ EmailMessage JSON format:
 Sample Postman POST call:
 <img src="https://github.com/brock-eng/EmailApp/blob/main/img/postman_preview.png">
 
-In addition to an API platform like Postman, there is an included <a href="https://github.com/brock-eng/EmailApp/blob/main/restcall.py">python script</a> with a POST template for sending a sample email (requires python requests).
+Alternatively, there is an included <a href="https://github.com/brock-eng/EmailApp/blob/main/restcall.py">python script</a> with a POST template for sending a sample email (requires python requests).
   
 
 
