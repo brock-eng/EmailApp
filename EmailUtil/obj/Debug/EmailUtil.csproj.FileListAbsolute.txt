@@ -1,0 +1,17 @@
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\EmailUtil.dll
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\EmailUtil.pdb
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\FluentEmail.Core.dll
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\FluentEmail.Smtp.dll
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\Newtonsoft.Json.dll
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\Newtonsoft.Json.xml
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\obj\Debug\EmailUtil.csproj.AssemblyReference.cache
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\obj\Debug\EmailUtil.csproj.CoreCompileInputs.cache
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\obj\Debug\EmailUtil.csproj.CopyComplete
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\obj\Debug\EmailUtil.dll
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\obj\Debug\EmailUtil.pdb
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\Dapper.dll
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\System.Data.SQLite.dll
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\Dapper.xml
+C:\Users\zbrock\source\repos\EmailSender\EmailUtil\bin\Debug\System.Data.SQLite.xml

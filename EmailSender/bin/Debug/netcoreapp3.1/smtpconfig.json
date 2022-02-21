@@ -1,0 +1,8 @@
+{
+  "Host": "smtp.gmail.com",
+  "Port": 587,
+  "EnableSsl": true,
+  "Username": "brockz.email.bot@gmail.com",
+  "Password": "8ycaE4TLtirNNBN",
+  "MaxAttempts": 3
+}

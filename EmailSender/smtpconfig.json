@@ -1,0 +1,8 @@
+{
+  "Host": "smtp.gmail.com",
+  "Port": 587,
+  "EnableSsl": true,
+  "Username": "Username",
+  "Password": "Password",
+  "MaxAttempts": 3
+}
