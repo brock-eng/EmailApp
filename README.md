@@ -4,7 +4,7 @@ C# automated email application built on a AspNet backend.  Logs all email attemp
 
 ### Build & Configuration
 - git clone https://github.com/brock-eng/EmailApp  
-- Edit <strong>smtpconfig.json</strong> with your email settings 
+- Edit <strong>smtpconfig.json</strong> with your email settings @\EmailApp\EmailSender\smtpconfig.json
 - Build/run application
 
 ### Usage
