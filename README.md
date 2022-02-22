@@ -1,6 +1,6 @@
 # EmailApp
 
-C# automated email application built on a sample REST backend.  Logs all email attempts to a SQLite DB.
+C# automated email application built on a AspNet backend.  Logs all email attempts to a SQLite DB.
 
 ### Build & Configuration
 - git clone https://github.com/brock-eng/EmailApp  
