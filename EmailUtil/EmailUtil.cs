@@ -32,6 +32,7 @@ namespace EmailUtility
       public string Username;
       public string Password;
       public int MaxAttempts;
+      public int AttemptDelay;  // seconds
     }
 
     private SmtpSettings Config;
@@ -101,30 +102,51 @@ namespace EmailUtility
         catch (Exception e)
         {
           message = e.Message;
+          System.Threading.Thread.Sleep(Config.AttemptDelay * 1000); // interval between attempts
         }
         finally
         {
           attempt++;
+
         }
       }
       return new Tuple<bool, string>(sendSuccess, message);
     }
 
     /// <summary>
-    /// Inserts EmailMessage and send status into SQLite database.
+    /// Inserts EmailMessage along with send status into SQLite database.
     /// </summary>
     private void SQLiteInsertNewEmail(EmailMessage msg, Tuple<bool, string> status)
     {
-      using (IDbConnection conn = new SQLiteConnection("Data Source=.\\MailDb.db;Version=3"))
+      string connString = "Data Source=.\\MailDb.db;Version=3";
+      using (var conn = new SQLiteConnection(connString))
       {
-        // Illegal SQL Query Characters
-        Regex rg = new Regex("[\"';,\t\r\n]");
+        SQLiteCommand cmd = conn.CreateCommand();
 
-        string insertStatement = "INSERT INTO MAIL (address, sender, subject, message, status, status_message, timestamp) " +
-                     String.Format("VALUES ('{0}','{1}','{2}','{3}','{4}','{5}', CURRENT_TIMESTAMP)",
-                     rg.Replace(msg.address, " "), rg.Replace(msg.from, " "), rg.Replace(msg.subject, " "), rg.Replace(msg.message, " "), 
-                     status.Item1.ToString(), rg.Replace(status.Item2, " "));
-        conn.Execute(insertStatement);
+        cmd.CommandText = "INSERT INTO MAIL (address, sender, subject, message, status, status_message, timestamp) " +
+                          "VALUES (@address, @from, @subject, @message, @success, @status_message, CURRENT_TIMESTAMP)";
+        cmd.Parameters.Add(new SQLiteParameter("@address", msg.address));
+        cmd.Parameters.Add(new SQLiteParameter("@from", msg.from));
+        cmd.Parameters.Add(new SQLiteParameter("@subject", msg.subject));
+        cmd.Parameters.Add(new SQLiteParameter("@message", msg.message));
+        cmd.Parameters.Add(new SQLiteParameter("@success", status.Item1.ToString()));
+        cmd.Parameters.Add(new SQLiteParameter("@status_message", status.Item2));
+
+#if DEBUG
+        string query = cmd.CommandText;
+        foreach (SQLiteParameter p in cmd.Parameters)
+        {
+          query = query.Replace(p.ParameterName, p.Value.ToString());
+        }
+        Console.WriteLine(query);
+#endif
+
+        conn.Open();
+       
+        if (cmd.ExecuteNonQuery() != 1)
+        {
+          // error handling
+        }
       }
     }
   }
