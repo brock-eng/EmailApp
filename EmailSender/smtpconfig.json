@@ -4,5 +4,6 @@
   "EnableSsl": true,
   "Username": "Username",
   "Password": "Password",
-  "MaxAttempts": 3
+  "MaxAttempts": 3,
+  "AttemptDelay" : 30
 }
