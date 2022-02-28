@@ -16,10 +16,10 @@ namespace EmailUtility
 {
   public class EmailMessage
   {
-    public string address { get; set; }
-    public string from { get; set; }
-    public string subject { get; set; }
-    public string message { get; set; }
+    public string Address { get; set; }
+    public string From { get; set; }
+    public string Subject { get; set; }
+    public string Message { get; set; }
   }
 
   public class EmailUtil
@@ -70,9 +70,9 @@ namespace EmailUtility
     {
       var email = Email
         .From(Config.Username)
-        .To(msg.address, msg.from)
-        .Subject(msg.subject)
-        .Body(msg.message);
+        .To(msg.Address, msg.From)
+        .Subject(msg.Subject)
+        .Body(msg.Message);
 
       // Tuple<sendSuccess, errorMessage>
       Tuple<bool, string> response = await Task.Run(() => SendEmail(email));
@@ -102,12 +102,11 @@ namespace EmailUtility
         catch (Exception e)
         {
           message = e.Message;
-          System.Threading.Thread.Sleep(Config.AttemptDelay * 1000); // interval between attempts
+          // System.Threading.Thread.Sleep(Config.AttemptDelay * 1000); // interval between attempts
         }
         finally
         {
           attempt++;
-
         }
       }
       return new Tuple<bool, string>(sendSuccess, message);
@@ -125,10 +124,10 @@ namespace EmailUtility
 
         cmd.CommandText = "INSERT INTO MAIL (address, sender, subject, message, status, status_message, timestamp) " +
                           "VALUES (@address, @from, @subject, @message, @success, @status_message, CURRENT_TIMESTAMP)";
-        cmd.Parameters.Add(new SQLiteParameter("@address", msg.address));
-        cmd.Parameters.Add(new SQLiteParameter("@from", msg.from));
-        cmd.Parameters.Add(new SQLiteParameter("@subject", msg.subject));
-        cmd.Parameters.Add(new SQLiteParameter("@message", msg.message));
+        cmd.Parameters.Add(new SQLiteParameter("@address", msg.Address));
+        cmd.Parameters.Add(new SQLiteParameter("@from", msg.From));
+        cmd.Parameters.Add(new SQLiteParameter("@subject", msg.Subject));
+        cmd.Parameters.Add(new SQLiteParameter("@message", msg.Message));
         cmd.Parameters.Add(new SQLiteParameter("@success", status.Item1.ToString()));
         cmd.Parameters.Add(new SQLiteParameter("@status_message", status.Item2));
 
